@@ -24,17 +24,16 @@ span {
   font-size: 30px;
   border-radius: 10px;
   color: rgb(92, 71, 211);
-  font-weight:bold;
+  font-weight: bold;
   cursor: pointer;
 }
 
 .reset {
-  width: 120px;
+  width: 170px;
   cursor: pointer;
 }
 
-.addCounter{
+.addCounter {
   width: 200px;
   margin-bottom: 130px;
 }
-

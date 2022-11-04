@@ -1,18 +1,18 @@
-const Counter = ({counter, setCounter}) => {
-    return(
-        <div>
-             <div className="buttons-container">
+const Counter = ({ tab, setTab }) => {
+  return (
+    <div>
+      <div className="buttons-container">
         <span
           onClick={() => {
-            setCounter(counter - 1);
+            setTab(tab - 1);
           }}
         >
           -
         </span>
-        <button>{counter}</button>
+        <button>{tab}</button>
         <span
           onClick={() => {
-            setCounter(counter + 1);
+            setTab(tab + 1);
           }}
         >
           +
@@ -21,15 +21,14 @@ const Counter = ({counter, setCounter}) => {
 
       <button
         onClick={() => {
-          setCounter(0);
+          setTab(0);
         }}
         className="reset"
       >
         Reset
       </button>
-        </div>
-    )
-}
-
+    </div>
+  );
+};
 
 export default Counter;

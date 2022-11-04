@@ -3,19 +3,21 @@ import { useState } from "react";
 import Counter from "./components/Counter";
 
 function App() {
-  const [counter, setCounter] = useState(0);
-  // const [add, setAdd] = useState(<Counter />);
+  const [tab, setTab] = useState([0]);
+
   return (
     <div className="App">
       <button
         onClick={() => {
-          // setAdd();
+          const newTab = [...tab];
+          newTab.push(<Counter />);
+          setTab(newTab)
         }}
         className="addCounter"
       >
         Add counter
       </button>
-      <Counter counter={counter} setCounter={setCounter} />
+      <Counter tab={tab} setTab={setTab} />
       {/* {counter ? <Counter /> : ""} */}
     </div>
   );
